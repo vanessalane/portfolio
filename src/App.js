@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import M from "materialize-css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 class App extends Component {
-
-  componentDidMount() {
-    M.AutoInit();
-  }
 
   render() {
     return (
       <div className="App">
         <Header></Header>
+        <main></main>
+        <Footer></Footer>
       </div>
     );
   }

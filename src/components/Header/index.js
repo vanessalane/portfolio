@@ -1,29 +1,22 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
-function Nav() {
-    return(
-        <header>
-            <nav>
-                <div className="nav-wrapper">
-                <a href="#!" className="brand-logo">Vanessa Lane</a>
-                <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-                <ul className="right hide-on-med-and-down">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                </div>
-            </nav>
-
-            <ul className="sidenav" id="mobile-demo">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
-    )
+function Header() {
+  return(
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">Vanessa Lane</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto justify-content-end">
+            <Nav.Link href="#home">About Me</Nav.Link>
+            <Nav.Link href="#link">Portfolio</Nav.Link>
+            <Nav.Link href="#link">Resume</Nav.Link>
+            <Nav.Link href="#link">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+  )
 }
 
-export default Nav;
+export default Header;
