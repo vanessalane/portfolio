@@ -5,21 +5,17 @@ import Col from 'react-bootstrap/Col';
 
 function Footer() {
   return (
-      <footer class="bg-light">
-      <Container>
-          <Row className="justify-content-md-center text-center">
-              <Col>
-                  <a href="https://www.linkedin.com/in/vanessa-lane/" class="text-muted">LinkedIn</a>
-              </Col>
-              <Col>
-                  <a href="https://github.com/vanessalane" class="text-muted">GitHub</a>
-              </Col>
-              <Col>
-                  <a href="https://www.instagram.com/vl.pottery/" class="text-muted">Instagram</a>
-              </Col>
-          </Row>
+    <footer className="bg-light">
+      <Container fluid>
+      <Row className="text-center">
+        <Col>
+          <a href="https://www.linkedin.com/in/vanessa-lane/" className="text-muted"><span><i className="fab fa-linkedin fa-2x"></i></span></a>
+          <a href="https://github.com/vanessalane" className="text-muted"><span><i className="fab fa-github fa-2x"></i></span></a>
+          <a href="https://www.instagram.com/vl.pottery/" className="text-muted"><span><i className="fab fa-instagram fa-2x"></i></span></a>
+        </Col>
+      </Row>
       </Container>
-      </footer>
+    </footer>
   )
 }
 
