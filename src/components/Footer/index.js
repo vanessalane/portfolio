@@ -30,7 +30,7 @@ function Footer() {
     },
   ]
   return (
-    <footer className="bg-light">
+    <footer className="bg-amber-50">
       <Container fluid>
       <Row className="text-center">
         <Col>
