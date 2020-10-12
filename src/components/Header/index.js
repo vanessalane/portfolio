@@ -22,7 +22,7 @@ function Header() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Jumbotron fluid className="bg-amber-200">
+      <Jumbotron fluid className="bg-amber-200 mb-0">
         <Container>
           <h1>Projects</h1>
           <p>

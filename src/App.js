@@ -8,6 +8,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 // import styles
@@ -17,11 +18,12 @@ import './App.css';
 
 function App(){
   return (
-    <div className="App">
+    <div className="App  bg-light">
       <Header></Header>
-      <Container className="mt-4 mb-4">
+      <Container className="bg-white">
         <About></About>
         <Projects></Projects>
+        <Resume></Resume>
         <ContactForm></ContactForm>
       </Container>
       <Footer></Footer>

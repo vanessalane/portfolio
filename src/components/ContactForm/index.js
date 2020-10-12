@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 // import utils
-import sendEmail from '../../utils/sendEmail';
+import sendEmail from '../../utils/email';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', body: '' });

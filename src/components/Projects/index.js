@@ -15,7 +15,7 @@ function Projects() {
     },
     {
       "title": "COVID-19 DataHub",
-      "description": "A frontend app that surfaces international case count statistics and US testing centers",
+      "description": "A frontend app for International case stats and US testing centers",
       "image": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq",
       "repository": "https://github.com/tedpedersen/group-project-uc-berkeley",
       "deployed_app": "https://cvdatahub.com/"
@@ -57,13 +57,14 @@ function Projects() {
             <Card className="mb-4">
               <Card.Img src={project.image} />
               <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
+                <Card.Title className="d-flex justify-content-between">
+                  <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                  <a href={project.repository} target="_blank" rel="noopener noreferrer"><span><i className="fab fa-github"></i></span></a>
+                </Card.Title>
+                <Card.Text>
+                    {project.description}
+                </Card.Text>
               </Card.Body>
-              <Card.Footer className="text-center d-flex justify-content-around">
-                <a href={project.repository}>Repository</a>
-                <a href={project.deployed_app}>Deployed app</a>
-              </Card.Footer>
             </Card>
           </Col>
         )})}
