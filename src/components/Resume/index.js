@@ -6,13 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
-// import relevant utils
-import downloadResume from '../../utils/resume';
-
 function Resume() {
   return (
     <Container className="p-3">
-      <h2 className="text-center mb-3">Skills</h2>
       <Row className="justify-content-center">
         <Col sm={12} md={6} lg={{span: 4, offset: 2}} className="d-flex flex-column">
           <h3>Frontend</h3>
@@ -43,7 +39,12 @@ function Resume() {
         </Col>
       </Row>
       <div className="text-center p-5">
-        <Button onClick={downloadResume}>Download Resume</Button>
+        <Button
+          href="https://drive.google.com/file/d/1qmccLqEyEsjv0kp6O7N79qJWtfALNGZi/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer">
+            View Resume
+        </Button>
       </div>
     </Container>
   )

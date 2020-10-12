@@ -2,8 +2,6 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap'
 
 // import bootstrap components
-import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -14,7 +12,7 @@ function Header() {
   return(
     <>
       <Navbar expand="lg" className="bg-white shadow-sm">
-        <Navbar.Brand><span className="color-cyan-800"><strong>Vanessa Lane</strong></span></Navbar.Brand>
+        <Navbar.Brand className="color-cyan-700">Vanessa Lane</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -34,16 +32,6 @@ function Header() {
           <ContactIcons></ContactIcons>
         </Navbar.Collapse>
       </Navbar>
-
-      <Jumbotron fluid className="bg-yellow-700 shadow-sm">
-        <Container>
-          <h1>Projects</h1>
-          <p>
-            This is a modified jumbotron that occupies the entire horizontal space of
-            its parent.
-          </p>
-        </Container>
-      </Jumbotron>
     </>
   )
 }

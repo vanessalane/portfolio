@@ -53,35 +53,35 @@ function Projects() {
     }
   ]
   return (
-    <>
-    <Row className="p-3">
-      {projects.map((project) => {
-        return (
-          <Col s={12} md={6} key={project.title}>
-            <Card className="mb-3">
-              <Card.Img src={project.image} />
-              <Card.Body>
-                <Card.Title className="d-flex justify-content-between">
-                  <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                  <a href={project.repository} target="_blank" rel="noopener noreferrer"><span><i className="fab fa-github"></i></span></a>
-                </Card.Title>
-                <Card.Text>
-                    {project.description}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        )})}
-    </Row>
-    <Container className="text-center p-5">
-      <Button
-        href="https://github.com/vanessalane"
-        target="_blank"
-        rel="noopener noreferrer">
-          View more on GitHub
-      </Button>
+    <Container className="bg-white">
+      <Row className="p-3">
+        {projects.map((project) => {
+          return (
+            <Col s={12} md={6} key={project.title}>
+              <Card className="mb-3">
+                <Card.Img src={project.image} />
+                <Card.Body>
+                  <Card.Title className="d-flex justify-content-between">
+                    <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                    <a href={project.repository} target="_blank" rel="noopener noreferrer"><span><i className="fab fa-github"></i></span></a>
+                  </Card.Title>
+                  <Card.Text>
+                      {project.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          )})}
+      </Row>
+      <div className="text-center p-5">
+        <Button
+          href="https://github.com/vanessalane"
+          target="_blank"
+          rel="noopener noreferrer">
+            View more on GitHub
+        </Button>
+      </div>
     </Container>
-    </>
   )
 }
 

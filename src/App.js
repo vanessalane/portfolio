@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// import react-bootstrap components
-import Container from 'react-bootstrap/Container';
-
 // import custom components
 import Header from './components/Header';
 import About from './components/About';
@@ -24,17 +21,15 @@ function App(){
     <Router>
       <div className="App">
         <Header />
-        <main>
-          <Container className="bg-white p-3 mb-5">
-            <Switch>
-              <Route exact path="/" component={About} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/resume" component={Resume} />
-              <Route exact path="/contact" component={ContactForm} />
-              <Route component={NoMatch} />
-            </Switch>
-          </Container>
+        <main className="bg-blue-50">
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/contact" component={ContactForm} />
+            <Route component={NoMatch} />
+          </Switch>
         </main>
         <Footer />
       </div>

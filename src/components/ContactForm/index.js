@@ -34,34 +34,18 @@ function ContactForm() {
   }
 
   return (
-    <Container className="p-3">
-      <Row>
-        <Col md={5} lg={3} className="flex-column d-flex p-3">
-          <h2>Contact</h2>
-            <a
-              href="https://github.com/vanessalane"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2">
-              <span><i className="fab fa-github"></i> vanessalane</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/vanessa-lane/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2">
-              <span><i className="fab fa-linkedin"></i> vanessa-lane</span>
-            </a>
-            <a
-              href="mailto:vlane0593@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2">
-              <span><i className="far fa-envelope"></i> vlane0593@gmail.com</span>
-            </a>
-        </Col>
-        <Col md={7} lg={9} className="d-flex flex-column p-3">
-          <h2>Send an email</h2>
+    <>
+    <div className="bg-blue-grey-500 p-5">
+      <Container className="text-center">
+        <div className="p-5">
+          <h1 className="color-white display-3">Get in Touch</h1>
+        </div>
+      </Container>
+    </div>
+
+      <div className="bg-white shadow-sm">
+        <Container className="flex-column d-flex p-5 bg-white">
+          <h2>Send me an email</h2>
           <Form onSubmit={handleSubmit} className="mt-2">
             <Form.Group controlId="name">
               <Form.Label>Your Name</Form.Label>
@@ -88,12 +72,57 @@ function ContactForm() {
             )}
 
             <Button variant="primary" type="submit">
-              Send Message
+              Submit
             </Button>
           </Form>
-        </Col>
-      </Row>
-    </Container>
+        </Container>
+      </div>
+
+      <div className="bg-amber-100 color-grey-500">
+        <Container className="p-5 text-center">
+          <Row>
+            <Col>
+                <span><i className="far fa-envelope fa-2x"></i></span>
+            </Col>
+            <Col>
+                <span><i className="fab fa-github fa-2x"></i></span>
+            </Col>
+            <Col>
+                <span><i className="fab fa-linkedin fa-2x"></i></span>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <a
+                href="mailto:vlane0593@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 h5 color-grey-500">
+                  vlane0593@gmail.com
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://github.com/vanessalane"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 h5 color-grey-500">
+                vanessalane
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://www.linkedin.com/in/vanessa-lane/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 h5 color-grey-500">
+                vanessa-lane
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </>
   )
 }
 

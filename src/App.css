@@ -26,14 +26,27 @@ footer {
 }
 
 a {
-  color: #f57f17;
+  color: #ef5350;
 }
 
 a:hover {
-  color: #00838f;
+  color: #295B95;
 }
 
 a.color-grey-700:hover {
   color: #212121;
-  text-decoration: none;
+}
+
+.btn {
+  background-color: #5486c0;
+  border-color: #5486c0;
+}
+
+.btn:hover, .btn:active {
+  background-color: #295B95;
+  border-color: #295B95;
+}
+
+.bg-dusty-blue {
+  background-color: #5486c0;
 }
