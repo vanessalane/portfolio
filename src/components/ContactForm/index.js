@@ -67,7 +67,7 @@ function ContactForm() {
         <ContactIcons></ContactIcons>
       </div>
 
-      <div className="shadow p-3 bg-white">
+      <div className="shadow p-3 bg-light">
         <Container className="flex-column d-flex p-3">
           <h2 className="color-blue-grey-700">Send me an email!</h2>
           <Form onSubmit={sendEmail} className="mt-2" id="contactForm">

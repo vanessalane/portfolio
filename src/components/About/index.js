@@ -40,7 +40,7 @@ function About() {
         </Container>
       </div>
 
-      <div className="shadow bg-white">
+      <div className="shadow bg-light">
         <Container className="p-5">
           <h2>About Me</h2>
           <p>

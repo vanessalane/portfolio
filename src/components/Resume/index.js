@@ -27,7 +27,7 @@ function Resume() {
         </Button>
       </div>
 
-      <div className="bg-white p-5 shadow">
+      <div className="bg-light p-5 shadow">
         <Container className="p-3">
           <Row className="justify-content-center">
             <Col sm={12} md={6} lg={{span: 4, offset: 2}} className="d-flex flex-column">
