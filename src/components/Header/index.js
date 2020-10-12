@@ -11,8 +11,8 @@ import ContactIcons from '../ContactIcons'
 function Header() {
   return(
     <>
-      <Navbar expand="lg" className="bg-white shadow-sm">
-        <Navbar.Brand className="color-cyan-700">Vanessa Lane</Navbar.Brand>
+      <Navbar expand="lg" className="bg-white shadow">
+        <Navbar.Brand>Vanessa Lane</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

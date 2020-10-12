@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 function Projects() {
   const projects = [
@@ -53,12 +54,31 @@ function Projects() {
     }
   ]
   return (
-    <Container className="bg-white">
-      <Row className="p-3">
+    <>
+    <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
+      <Container className="text-center">
+        <div className="p-5">
+          <h1 className="display-3"><strong>Recent Projects</strong></h1>
+        </div>
+      </Container>
+    </Jumbotron>
+
+    <div className="p-5 text-center">
+      <Button
+        href="https://github.com/vanessalane"
+        target="_blank"
+        rel="noopener noreferrer">
+          View all of my projects on GitHub
+      </Button>
+    </div>
+
+    <div className="bg-white shadow">
+      <Container className="p-5">
+        <Row>
         {projects.map((project) => {
           return (
             <Col s={12} md={6} key={project.title}>
-              <Card className="mb-3">
+              <Card className="mb-3 shadow">
                 <Card.Img src={project.image} />
                 <Card.Body>
                   <Card.Title className="d-flex justify-content-between">
@@ -72,16 +92,10 @@ function Projects() {
               </Card>
             </Col>
           )})}
-      </Row>
-      <div className="text-center p-5">
-        <Button
-          href="https://github.com/vanessalane"
-          target="_blank"
-          rel="noopener noreferrer">
-            View more on GitHub
-        </Button>
-      </div>
-    </Container>
+        </Row>
+      </Container>
+    </div>
+    </>
   )
 }
 

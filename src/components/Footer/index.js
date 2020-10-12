@@ -10,7 +10,7 @@ import ContactIcons from '../ContactIcons'
 
 function Footer() {
   return (
-    <footer className="bg-white color-grey-700">
+    <footer className="color-grey-700">
       <Container fluid>
         <Row className="text-left">
           <Col>

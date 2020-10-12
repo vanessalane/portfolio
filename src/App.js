@@ -21,7 +21,7 @@ function App(){
     <Router>
       <div className="App">
         <Header />
-        <main className="bg-blue-50">
+        <main>
           <Switch>
             <Route exact path="/" component={About} />
             <Route exact path="/about" component={About} />
@@ -30,8 +30,8 @@ function App(){
             <Route exact path="/contact" component={ContactForm} />
             <Route component={NoMatch} />
           </Switch>
-        </main>
         <Footer />
+        </main>
       </div>
     </Router>
   );
