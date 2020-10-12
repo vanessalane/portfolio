@@ -28,8 +28,8 @@ ul.no-bullets {
   list-style-type: none;
 }
 
-a, .card a:hover {
-  color: #ef5350;
+a {
+  color: #5486c0;
 }
 
 .card {
@@ -43,8 +43,8 @@ a, .card a:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.card a, a:hover, a.color-grey-700:hover {
-  color: #5486c0;
+a:hover {
+  color: #dc5a26;
   text-decoration: none;
 }
 
@@ -67,6 +67,6 @@ h2 {
 }
 
 h3 {
-  color: #E0A62D;
+  color: #dc5a26;
   padding-bottom: 16px;
 }

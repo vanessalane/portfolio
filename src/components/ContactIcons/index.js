@@ -31,7 +31,7 @@ function ContactIcons() {
           key={contactLink.name}
           target="_blank"
           rel="noopener noreferrer"
-          className="mr-3 color-grey-700">
+          className="mr-3">
           <span><i className={contactLink.classes}></i></span>
         </a>
       )
