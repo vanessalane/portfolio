@@ -20,7 +20,7 @@ function About() {
           </div>
           <div className="justify-content-center p-5">
             <h1 className="color-white display-3"><strong>Hello, World!</strong></h1>
-            <h1>I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h1>
+            <h2>I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h2>
           </div>
         </Container>
 
