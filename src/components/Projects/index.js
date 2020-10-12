@@ -9,12 +9,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 // import images for apps
-import drinkAppImage from '../../assets/image/drink_app/drink_app.png';
-import covidDatahubImage from '../../assets/image/covid_datahub/covid_datahub.png';
-import budgetTrackerImage from '../../assets/image/budget_tracker/budget_tracker.png';
-import workdaySchedulerImage from '../../assets/image/workday_scheduler/workday_scheduler.png';
-import weatherDashboardImage from '../../assets/image/weather_dashboard/weather_dashboard.png';
-import jsQuizImage from '../../assets/image/js_quiz/js_quiz.png';
+import drinkAppImage from '../../assets/image/drink_app.png';
+import covidDatahubImage from '../../assets/image/covid_datahub.png';
+import budgetTrackerImage from '../../assets/image/budget_tracker.png';
+import workdaySchedulerImage from '../../assets/image/workday_scheduler.png';
+import weatherDashboardImage from '../../assets/image/weather_dashboard.png';
+import jsQuizImage from '../../assets/image/js_quiz.png';
 
 function Projects() {
   const projects = [
@@ -92,21 +92,23 @@ function Projects() {
         {projects.map((project) => {
           return (
             <Col s={12} md={6} key={project.title}>
-              <Card className="m-4 bg-white d-flex justify-content-center">
-                <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
+              <Card className="m-lg-4 m-2 bg-white d-flex justify-content-center">
                   <Card.Body>
-                    <Card.Title class="d-flex justify-content-between align-items-center">
-                      <h4>{project.title}</h4>
+                    <Card.Title className="d-flex justify-content-between align-items-center">
+                      <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
+                        <h4>{project.title}</h4>
+                      </a>
                       <a href={project.repository} target="_blank" rel="noopener noreferrer">
-                        <span><i className="fab fa-github fa-2x"></i></span>
+                        <span><i className="fab fa-github"></i></span>
                       </a>
                     </Card.Title>
-                    <Card.Text className="color-grey-800">
+                    <Card.Subtitle className="color-grey-800">
                       {project.description}
-                    </Card.Text>
+                    </Card.Subtitle>
+                  <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
+                    <Card.Img src={project.imageSrc} className="pt-4"/>
+                  </a>
                   </Card.Body>
-                  <Card.Img src={project.imageSrc} className="p-4"/>
-                </a>
               </Card>
             </Col>
           )})}

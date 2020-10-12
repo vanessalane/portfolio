@@ -41,7 +41,7 @@ function About() {
 
       <div className="shadow bg-light">
         <Container className="p-5">
-          <h2>About Me</h2>
+          <h3>About Me</h3>
           <p>
               I'm on the research program management team at <a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a>,
               where I build study recruitment materials, run operations for our <a href="https://research.23andme.com/collaborate/" target="_blank" rel="noopener noreferrer">academic collaboration programs</a>,

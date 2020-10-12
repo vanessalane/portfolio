@@ -2,6 +2,7 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
+  font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -50,4 +51,13 @@ a, .card a:hover {
 .btn:hover, .btn:active {
   background-color: #B77D04;
   border: 3px solid #B77D04;
+}
+
+h1, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+  color: #E0A62D;
+  padding-bottom: 16px;
 }

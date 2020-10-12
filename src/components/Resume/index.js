@@ -29,7 +29,7 @@ function Resume() {
 
       <div className="bg-light p-4 shadow">
         <Container>
-          <CardDeck sm={12} md={6} lg={4} className="m-4">
+          <CardDeck className="m-lg-4">
             <Card>
               <Card.Body>
                 <h3>Frontend Tech</h3>

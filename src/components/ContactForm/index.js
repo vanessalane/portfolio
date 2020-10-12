@@ -68,7 +68,7 @@ function ContactForm() {
         <Container className="flex-column d-flex p-3">
           <Card>
             <Card.Body>
-              <h2 className="color-red-300">Send me an email!</h2>
+              <h3>Send me an email!</h3>
               <Form onSubmit={sendEmail} className="mt-2" id="contactForm">
                 <Form.Group controlId="name">
                   <Form.Label>Your Name</Form.Label>
