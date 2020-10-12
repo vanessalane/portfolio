@@ -43,14 +43,6 @@ function Projects() {
       "deployed_app": "https://desolate-shore-34466.herokuapp.com/"
     },
     {
-      "title": "Workday Scheduler",
-      "description": "A frontend vanilla JS app for scheduling your workday",
-      "imageClass": "workday-scheduler",
-      "imageSrc": workdaySchedulerImage,
-      "repository": "https://github.com/vanessalane/workday-scheduler",
-      "deployed_app": "https://vanessalane.github.io/workday-scheduler/"
-    },
-    {
       "title": "Weather Dashboard",
       "description": "A frontend vanilla JS app for checking the weather",
       "imageClass": "weather-dashboard",
@@ -65,13 +57,21 @@ function Projects() {
       "imageSrc": jsQuizImage,
       "repository": "https://github.com/vanessalane/code-quiz",
       "deployed_app": "https://vanessalane.github.io/code-quiz/"
+    },
+    {
+      "title": "Workday Scheduler",
+      "description": "A frontend vanilla JS app for scheduling your workday",
+      "imageClass": "workday-scheduler",
+      "imageSrc": workdaySchedulerImage,
+      "repository": "https://github.com/vanessalane/workday-scheduler",
+      "deployed_app": "https://vanessalane.github.io/workday-scheduler/"
     }
   ]
   return (
     <>
     <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
       <Container className="text-center">
-        <div className="p-5">
+        <div className="p-md-5">
           <h1 className="display-3"><strong>Recent Projects</strong></h1>
         </div>
       </Container>
@@ -86,23 +86,27 @@ function Projects() {
       </Button>
     </div>
 
-    <div className="bg-light p-5 shadow">
+    <div className="bg-light p-sm-5 pb-4 shadow projects">
       <Container>
         <Row>
         {projects.map((project) => {
           return (
             <Col s={12} md={6} key={project.title}>
-              <Card className="mb-3 shadow">
-                <Card.Img src={project.imageSrc} />
-                <Card.Body>
-                  <Card.Title className="d-flex justify-content-between">
-                    <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                    <a href={project.repository} target="_blank" rel="noopener noreferrer"><span><i className="fab fa-github"></i></span></a>
-                  </Card.Title>
-                  <Card.Text>
+              <Card className="m-4 bg-white d-flex justify-content-center">
+                <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
+                  <Card.Body>
+                    <Card.Title class="d-flex justify-content-between align-items-center">
+                      <h4>{project.title}</h4>
+                      <a href={project.repository} target="_blank" rel="noopener noreferrer">
+                        <span><i className="fab fa-github fa-2x"></i></span>
+                      </a>
+                    </Card.Title>
+                    <Card.Text className="color-grey-800">
                       {project.description}
-                  </Card.Text>
-                </Card.Body>
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Img src={project.imageSrc} className="p-4"/>
+                </a>
               </Card>
             </Col>
           )})}

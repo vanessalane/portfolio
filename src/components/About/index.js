@@ -11,31 +11,30 @@ function About() {
   return (
     <>
       <Jumbotron className="bg-blue-grey-400 mb-0 shadow">
-        <Container className="d-flex justify-content-space-between align-items-center">
-          <div className="justify-content-center p-5">
+        <Container className="d-md-flex justify-content-space-between align-items-center">
+          <div className="text-center p-4">
             <Image
               src={require("../../assets/image/vanessalane_headshot_bw.jpg")}
               roundedCircle
-              width="300vh"
-              height="300vh"/>
+              width="250vw"/>
           </div>
-          <div className="justify-content-center p-5">
+          <div className="justify-content-center p-md-5">
             <h1 className="color-white display-3"><strong>Hello, World!</strong></h1>
             <h2>I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h2>
           </div>
         </Container>
       </Jumbotron>
       
-      <div>
-        <Container className="p-5 d-flex justify-content-around align-items-center">
+      <div> 
+        <Container className="p-5 d-flex flex-column flex-md-row justify-content-center align-items-center">
           <LinkContainer to="/projects">
-            <Button>Check out my projects</Button>
+            <Button className="m-3">Peep my Projects</Button>
           </LinkContainer>
           <LinkContainer to="/contact">
-            <Button>Get in Touch</Button>
+            <Button className="m-3">Get in Touch</Button>
           </LinkContainer>
           <LinkContainer to="/resume">
-            <Button>View my Resume</Button>
+            <Button className="m-3">Check my Resume</Button>
           </LinkContainer>
         </Container>
       </div>
