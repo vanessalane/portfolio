@@ -25,21 +25,7 @@ function About() {
         </Container>
       </Jumbotron>
       
-      <div> 
-        <Container className="p-5 d-flex flex-column flex-md-row justify-content-center align-items-center">
-          <LinkContainer to="/projects">
-            <Button className="m-3">Peep my Projects</Button>
-          </LinkContainer>
-          <LinkContainer to="/contact">
-            <Button className="m-3">Get in Touch</Button>
-          </LinkContainer>
-          <LinkContainer to="/resume">
-            <Button className="m-3">Check my Resume</Button>
-          </LinkContainer>
-        </Container>
-      </div>
-
-      <div className="shadow bg-light">
+      <div className="shadow bg-light mt-5">
         <Container className="p-5">
           <h3>About Me</h3>
           <p>
@@ -58,6 +44,17 @@ function About() {
         </Container>
       </div>
 
+      <Container className="pt-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <LinkContainer to="/projects">
+          <Button className="m-3">Peep my Projects</Button>
+        </LinkContainer>
+        <LinkContainer to="/contact">
+          <Button className="m-3">Get in Touch</Button>
+        </LinkContainer>
+        <LinkContainer to="/resume">
+          <Button className="m-3">Check my Resume</Button>
+        </LinkContainer>
+      </Container>
     </>
   )
 }

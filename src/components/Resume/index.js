@@ -18,16 +18,7 @@ function Resume() {
         </Container>
       </Jumbotron>
 
-      <div className="p-5 text-center">
-        <Button
-          href="https://drive.google.com/file/d/1qmccLqEyEsjv0kp6O7N79qJWtfALNGZi/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer">
-            Get the PDF
-        </Button>
-      </div>
-
-      <div className="bg-light p-4 shadow">
+      <div className="bg-light p-4 mt-5 shadow">
         <Container>
           <CardDeck className="m-lg-4">
             <Card>
@@ -64,6 +55,16 @@ function Resume() {
           </CardDeck>
         </Container>
       </div>
+
+      <Container className="pt-3 text-center">
+      <Button
+          href="https://drive.google.com/file/d/1qmccLqEyEsjv0kp6O7N79qJWtfALNGZi/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="m-3">
+            Get the PDF
+        </Button>
+      </Container>
     </>
   )
 }

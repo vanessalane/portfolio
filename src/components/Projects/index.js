@@ -77,16 +77,7 @@ function Projects() {
       </Container>
     </Jumbotron>
 
-    <div className="p-5 text-center">
-      <Button
-        href="https://github.com/vanessalane"
-        target="_blank"
-        rel="noopener noreferrer">
-          View all of my projects on GitHub
-      </Button>
-    </div>
-
-    <div className="bg-light p-sm-5 pb-4 shadow projects">
+    <div className="bg-light p-sm-5 pb-4 mt-5 shadow projects">
       <Container>
         <Row>
         {projects.map((project) => {
@@ -115,6 +106,16 @@ function Projects() {
           </Row>
         </Container>
       </div>
+      
+      <Container className="text-center pt-3">
+      <Button
+        href="https://github.com/vanessalane"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="m-3">
+          View all of my projects on GitHub
+      </Button>
+      </Container>
     </>
   )
 }

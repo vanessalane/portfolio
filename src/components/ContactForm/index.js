@@ -63,15 +63,13 @@ function ContactForm() {
         </Container>
       </Jumbotron>
 
-      <div className="p-5"></div>
-
-      <div className="shadow p-3 bg-light">
+      <div className="shadow p-3 mt-5 bg-light">
         <Container className="flex-column d-flex p-3">
-          <Card>
-            <Card.Body>
-              <Row>
-                <Col md={8} sm={12} className="d-flex flex-column">
-                  <h3>Send me an email!</h3>
+          <Row>
+            <Col md={8} sm={12} className="d-flex flex-column">
+              <h3>Send me an email!</h3>
+              <Card>
+                <Card.Body>
                   <Form onSubmit={sendEmail} id="contactForm">
                     <Form.Group controlId="name">
                       <Form.Label>Your Name</Form.Label>
@@ -99,18 +97,18 @@ function ContactForm() {
 
                     <Button className="btn-yellow" type="submit">Submit</Button>
                   </Form>
+                  </Card.Body>
+                </Card>
                 </Col>
                 <Col md={4} sm={12} className="d-flex flex-column">
-                  <h3>Contact Info</h3>
                   <ul className="no-bullets">
+                    <li><h3>Contact Info</h3></li>
                     <li><span><i class="far fa-envelope"></i></span> vlane0593@gmail.com</li>
                     <li><span><i class="fab fa-github"></i></span> vanessalane</li>
                     <li><span><i class="fab fa-linkedin"></i></span> vanessa-lane</li>
                   </ul>
                 </Col>
               </Row>
-            </Card.Body>
-          </Card>
         </Container>
       </div>
     </>

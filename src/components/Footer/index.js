@@ -11,7 +11,7 @@ import ContactIcons from '../ContactIcons'
 function Footer() {
   return (
     <footer className="pt-5">
-      <Container fluid>
+      <Container>
         <Row className="text-left">
           <Col>
             <p>© 2020 Vanessa Lane</p>
