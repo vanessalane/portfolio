@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+import { validateEmail } from '../../utils/helpers';
+
 // import react-bootstrap components
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -8,16 +10,27 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// define ContactForm component
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
+  const { name, email, subject, message } = formState;
   const [formMessage, setFormMessage] = useState('');
 
   function handleChange(e) {
-    if (!e.target.value.length) {
-      const name =  e.target.name;
-      setFormMessage(`${name.charAt(0).toUpperCase() + name.slice(1)} is required.`);
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+          setFormMessage('Your email is invalid.');
+        } else {
+          setFormMessage('');
+        }
     } else {
-      setFormMessage('');
+      if (!e.target.value.length) {
+        const name =  e.target.name;
+        setFormMessage(`${name.charAt(0).toUpperCase() + name.slice(1)} is required.`);
+      } else {
+        setFormMessage('');
+      }
     }
 
     if (!formMessage) {
@@ -73,12 +86,10 @@ function ContactForm() {
             </Form.Group>
 
             {formMessage && (
-              <p className="error-text ">{formMessage}</p>
+              <p>{formMessage}</p>
             )}
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Button variant="primary" type="submit">Submit</Button>
           </Form>
         </Container>
       </div>
