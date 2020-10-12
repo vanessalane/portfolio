@@ -3,6 +3,7 @@
   height: 100vh;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
+  color: #616161;
 }
 
 main {
@@ -21,6 +22,10 @@ main {
 
 footer {
   padding-top: 16px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
 }
 
 a, .card a:hover {
@@ -55,6 +60,10 @@ a, .card a:hover {
 
 h1, h3, h4 {
   font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  color: #212121;
 }
 
 h3 {
