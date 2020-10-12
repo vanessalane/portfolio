@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -51,26 +50,24 @@ function Projects() {
     }
   ]
   return (
-    <Container>
-      <Row>
-        {projects.map((project) => {
-          return (
-            <Col s={12} md={6} key={project.title}>
-              <Card className="mb-4">
-                <Card.Img src={project.image} />
-                <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
-                </Card.Body>
-                <Card.Footer className="text-center d-flex justify-content-around">
-                  <a href={project.repository}>Repository</a>
-                  <a href={project.deployed_app}>Deployed app</a>
-                </Card.Footer>
-              </Card>
-            </Col>
-          )})}
-      </Row>
-    </Container>
+    <Row>
+      {projects.map((project) => {
+        return (
+          <Col s={12} md={6} key={project.title}>
+            <Card className="mb-4">
+              <Card.Img src={project.image} />
+              <Card.Body>
+                <Card.Title>{project.title}</Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+              </Card.Body>
+              <Card.Footer className="text-center d-flex justify-content-around">
+                <a href={project.repository}>Repository</a>
+                <a href={project.deployed_app}>Deployed app</a>
+              </Card.Footer>
+            </Card>
+          </Col>
+        )})}
+    </Row>
   )
 }
 
