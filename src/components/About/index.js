@@ -6,29 +6,22 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 
-// import custom components
-import ContactIcons from '../ContactIcons'
-
 function About() {
   return (
-    <Container className="mt-5 mb-5">
-      <Row>
-        <Col sm={12} md={{span: 6, offset: 6}}>
-          <h2>Hello, World!</h2>
-        </Col>
-      </Row>
+    <Container className="p-3">
       <Row>
         <Col sm={12} md={6} className="justify-content-center mt-3 mb-sm-3">
           <Image
             src={require("../../assets/image/vanessalane_headshot_bw.jpg")}
             roundedCircle
-            width="300vh"
-            height="300vh"/>
+            width="400vh"
+            height="400vh"/>
         </Col>
         <Col sm={12} md={6} className="d-flex flex-column mt-3">
           <Row>
             <Col>
-              <h2 className="color-cyan-800">I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h2>
+              <h2>Hello, World!</h2>
+              <h1 className="color-cyan-800">I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h1>
             </Col>
           </Row>
           <Row className="mt-3">
@@ -40,14 +33,9 @@ function About() {
           </Row>
           <Row className="mt-3">
             <Col>
-              My programming journey began once I learned that I could <a href="https://automatetheboringstuff.com/" rel="noopener noreferrer" target="_blank">
+              I started programming once I learned that I could <a href="https://automatetheboringstuff.com/" rel="noopener noreferrer" target="_blank">
               automate the boring stuff</a>. As soon as I learned Python, there was no turning back. A new job, some CS classes, and a full-stack bootcamp later,
               I'm looking to transition into a full-time engineering role.
-            </Col>
-          </Row>
-          <Row className="mt-3">
-            <Col>
-              <ContactIcons></ContactIcons>
             </Col>
           </Row>
         </Col>

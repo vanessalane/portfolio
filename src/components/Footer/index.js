@@ -10,16 +10,16 @@ import ContactIcons from '../ContactIcons'
 
 function Footer() {
   return (
-    <footer className="bg-amber-50">
+    <footer className="bg-orange-50 color-grey-700" >
       <Container fluid>
-      <Row className="text-left">
-        <Col>
-          <p>© 2020 Vanessa Lane</p>
-        </Col>
-        <Col className="d-flex justify-content-end">
-          <ContactIcons></ContactIcons>
-        </Col>
-      </Row>
+        <Row className="text-left">
+          <Col>
+            <p>© 2020 Vanessa Lane</p>
+          </Col>
+          <Col className="d-flex justify-content-end">
+            <ContactIcons></ContactIcons>
+          </Col>
+        </Row>
       </Container>
     </footer>
   )

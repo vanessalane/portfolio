@@ -1,6 +1,6 @@
 .App {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -10,9 +10,30 @@ main {
 
 .row > div[class*='col-'] {
   display: flex;
-  flex:1 0 auto;
+  flex: 1 0 auto;
 }
 
 footer {
   padding-top: 16px;
+}
+
+.container {
+  border-radius: 5px;
+}
+
+.navbar {
+  box-shadow: 200px;
+}
+
+a {
+  color: #f57f17;
+}
+
+a:hover {
+  color: #00838f;
+}
+
+a.color-grey-700:hover {
+  color: #212121;
+  text-decoration: none;
 }

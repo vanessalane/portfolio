@@ -11,7 +11,7 @@ import downloadResume from '../../utils/resume';
 
 function Resume() {
   return (
-    <Container className="mt-5 mb-5">
+    <Container className="p-3">
       <h2 className="text-center mb-3">Skills</h2>
       <Row className="justify-content-center">
         <Col sm={12} md={6} lg={{span: 4, offset: 2}} className="d-flex flex-column">
@@ -42,7 +42,7 @@ function Resume() {
           </ul>
         </Col>
       </Row>
-      <div className="text-center mt-3">
+      <div className="text-center p-5">
         <Button onClick={downloadResume}>Download Resume</Button>
       </div>
     </Container>
