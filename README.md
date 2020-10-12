@@ -1,3 +1,10 @@
+# React Portfolio
+This repo includes code for my portfolio built with React.
+
+Deployed app: https://vanessalane.herokuapp.com/
+
+## Dev Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
