@@ -20,8 +20,8 @@ function About() {
                 width="300vw"/>
             </Col>
             <Col className="pl-md-5">
-                <h1 className="display-4 text-center text-lg-left color-white p-0-lg pt-4">hello, world!</h1>
-                <p className="color-dark-grey text-center text-md-left h3">
+                <h1 className="display-4 text-center text-lg-left text-light p-0-lg pt-4">hello, world!</h1>
+                <p className="text-dark text-center text-md-left h3">
                   I'm Vanessa Lane, a full-stack developer based in San Francisco.
                 </p>
             </Col>

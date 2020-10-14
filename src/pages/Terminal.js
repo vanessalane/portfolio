@@ -14,9 +14,9 @@ function Terminal(props) {
   };
 
   return (
-    <div className="terminal">
-      <h1 className="terminal-text">
-        <p><span className="color-blue">&#x203A;</span></p>
+    <div fluid className="terminal bg-dark">
+      <h1 className="text-secondary display-5 display-md-4">
+        <p><span>&#x203A;</span></p>
         <span>
           <Typist
             avgTypingDelay={100}
@@ -28,16 +28,16 @@ function Terminal(props) {
               hideWhenDone: true
             }}
           >
-            <p><span className="color-blue">&#x203A;</span></p>
+            <p><span>&#x203A;</span></p>
             <Typist.Delay ms={150}></Typist.Delay>
-            <p><span className="color-blue">&#x203A;</span></p>
+            <p><span>&#x203A;</span></p>
             <Typist.Delay ms={150}></Typist.Delay>
-            <span className="pr-2 pr-md-4 color-blue">&#x203A;</span>
-            <span className="color-white">meetVanessaLane();</span>
+            <span className="pr-2 pr-md-4">&#x203A;</span>
+            <span className="text-light">meetVanessaLane();</span>
           </Typist>
         </span>
         {showSuccess && 
-          <p className="color-green mt-3">Redirecting...</p>
+          <p className="text-success mt-3">Redirecting...</p>
         }
       </h1>
     </div>

@@ -4,7 +4,6 @@ main {
   flex: 1 0 auto;
   background-color: #F7E9CA;
   font-family: 'Lato', sans-serif;
-  color: #616161;
   min-height: 90vh;
 }
 .row > div[class*='col-'] {
@@ -14,10 +13,7 @@ main {
 .copyright {
   margin: auto;
 }
-
-/* Start Terminal Styles */
 .terminal {
-  background-color: #212121;
   height: 100vh;
 }
 @media only screen and (max-width: 600px) {
@@ -25,31 +21,14 @@ main {
     font-size: 8vw;
   }
 }
-.terminal-text {
-  opacity: 80%;
-  padding-top: 16px;
-}
-.color-blue {
-  color: #2196f3;
-}
-.color-green {
-  color: #00c853;
-}
-/* End Terminal Styles */
 
 /* Start Text Styles */
-a, .form-message {
+a {
   color: #5486c0;
 }
-a:hover {
+a:hover, .form-message {
   color: #dc5a26;
   text-decoration: none;
-}
-.color-white {
-  color: #FFFFFF;
-}
-.color-dark-grey {
-  color: #212121;
 }
 h1, h3, h4 {
   font-family: 'Roboto Mono', monospace;
