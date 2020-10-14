@@ -6,7 +6,6 @@ import { validateEmail } from '../../utils/helpers';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
@@ -54,15 +53,6 @@ function ContactForm() {
   }
 
   return (
-    <>
-      <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
-        <Container className="text-center">
-          <div className="p-md-5">
-            <h1 className="display-3"><strong>Get in Touch</strong></h1>
-          </div>
-        </Container>
-      </Jumbotron>
-
       <div className="shadow p-3 mt-5 bg-light">
         <Container className="flex-column d-flex p-3">
           <Row>
@@ -111,7 +101,6 @@ function ContactForm() {
               </Row>
         </Container>
       </div>
-    </>
   )
 }
 

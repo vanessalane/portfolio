@@ -4,17 +4,19 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// import custom components
+import Project from '../components/Project';
+
 // import images for apps
-import drinkAppImage from '../../assets/image/drink_app.png';
-import covidDatahubImage from '../../assets/image/covid_datahub.png';
-import budgetTrackerImage from '../../assets/image/budget_tracker.png';
-import workdaySchedulerImage from '../../assets/image/workday_scheduler.png';
-import weatherDashboardImage from '../../assets/image/weather_dashboard.png';
-import jsQuizImage from '../../assets/image/js_quiz.png';
+import drinkAppImage from '../assets/image/drink_app.png';
+import covidDatahubImage from '../assets/image/covid_datahub.png';
+import budgetTrackerImage from '../assets/image/budget_tracker.png';
+import workdaySchedulerImage from '../assets/image/workday_scheduler.png';
+import weatherDashboardImage from '../assets/image/weather_dashboard.png';
+import jsQuizImage from '../assets/image/js_quiz.png';
 
 function Projects() {
   const projects = [
@@ -69,52 +71,36 @@ function Projects() {
   ]
   return (
     <>
-    <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
-      <Container className="text-center">
-        <div className="p-md-5">
-          <h1 className="display-3"><strong>Recent Projects</strong></h1>
-        </div>
-      </Container>
-    </Jumbotron>
+      <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
+        <Container className="text-center">
+          <div className="p-md-5">
+            <h1 className="display-3"><strong>Recent Projects</strong></h1>
+          </div>
+        </Container>
+      </Jumbotron>
 
-    <div className="bg-light p-sm-5 pb-4 mt-5 shadow projects">
-      <Container>
-        <Row>
-        {projects.map((project) => {
-          return (
-            <Col s={12} md={6} key={project.title}>
-              <Card className="m-lg-4 m-2 bg-white d-flex justify-content-center">
-                  <Card.Body>
-                    <Card.Title className="d-flex justify-content-between align-items-center">
-                      <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
-                        <h4>{project.title}</h4>
-                      </a>
-                      <a href={project.repository} target="_blank" rel="noopener noreferrer">
-                        <span><i className="fab fa-github"></i></span>
-                      </a>
-                    </Card.Title>
-                    <Card.Subtitle className="color-grey-800">
-                      {project.description}
-                    </Card.Subtitle>
-                  <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
-                    <Card.Img src={project.imageSrc} className="pt-4"/>
-                  </a>
-                  </Card.Body>
-              </Card>
-            </Col>
-          )})}
+      <div className="bg-light p-sm-5 pb-4 mt-5 shadow projects">
+        <Container>
+          <Row>
+            {projects.map((project) => {
+              return(
+                <Col s={12} md={6} key={project.title}>
+                  <Project project={project} />
+                </Col>
+              )
+            })}
           </Row>
         </Container>
       </div>
       
       <Container className="text-center pt-3">
-      <Button
-        href="https://github.com/vanessalane"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="m-3">
-          View all of my projects on GitHub
-      </Button>
+        <Button
+          href="https://github.com/vanessalane"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="m-3">
+            View all of my projects on GitHub
+        </Button>
       </Container>
     </>
   )

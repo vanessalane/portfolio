@@ -14,7 +14,7 @@ function About() {
         <Container className="d-md-flex justify-content-space-between align-items-center">
           <div className="text-center p-4">
             <Image
-              src={require("../../assets/image/vanessalane_headshot_bw.jpg")}
+              src={require("../assets/image/vanessalane_headshot_bw.jpg")}
               roundedCircle
               width="250vw"/>
           </div>
