@@ -3,12 +3,8 @@ import emailjs from 'emailjs-com';
 import { validateEmail } from '../../utils/helpers';
 
 // import react-bootstrap components
-import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
 
 // define ContactForm component
 function ContactForm() {
@@ -53,54 +49,33 @@ function ContactForm() {
   }
 
   return (
-      <div className="shadow p-3 mt-5 bg-light">
-        <Container className="flex-column d-flex p-3">
-          <Row>
-            <Col md={8} sm={12} className="d-flex flex-column">
-              <h3>Send me an email!</h3>
-              <Card>
-                <Card.Body>
-                  <Form onSubmit={sendEmail} id="contactForm">
-                    <Form.Group controlId="name">
-                      <Form.Label>Your Name</Form.Label>
-                      <Form.Control required name="name" placeholder="Jane Doe" onBlur={handleChange} />
-                    </Form.Group>
+    <Form onSubmit={sendEmail} id="contactForm">
+      <Form.Group controlId="name">
+        <Form.Label>Your Name</Form.Label>
+        <Form.Control required name="name" placeholder="Jane Doe" onBlur={handleChange} />
+      </Form.Group>
 
-                    <Form.Group controlId="email">
-                      <Form.Label>Your Email</Form.Label>
-                      <Form.Control required name="email" type="email" placeholder="jdoe@gmail.com"  onBlur={handleChange} />
-                    </Form.Group>
+      <Form.Group controlId="email">
+        <Form.Label>Your Email</Form.Label>
+        <Form.Control required name="email" type="email" placeholder="jdoe@gmail.com"  onBlur={handleChange} />
+      </Form.Group>
 
-                    <Form.Group controlId="subject">
-                      <Form.Label>Subject</Form.Label>
-                      <Form.Control required name="subject" placeholder="Subject" onBlur={handleChange} />
-                    </Form.Group>
+      <Form.Group controlId="subject">
+        <Form.Label>Subject</Form.Label>
+        <Form.Control required name="subject" placeholder="Subject" onBlur={handleChange} />
+      </Form.Group>
 
-                    <Form.Group controlId="message">
-                      <Form.Label>Message</Form.Label>
-                      <Form.Control required name="message" as="textarea" rows="5" placeholder="Message" onBlur={handleChange} />
-                    </Form.Group>
+      <Form.Group controlId="message">
+        <Form.Label>Message</Form.Label>
+        <Form.Control required name="message" as="textarea" rows="5" placeholder="Message" onBlur={handleChange} />
+      </Form.Group>
 
-                    {formMessage && (
-                      <p>{formMessage}</p>
-                    )}
+      {formMessage && (
+        <p>{formMessage}</p>
+      )}
 
-                    <Button className="btn-yellow" type="submit">Submit</Button>
-                  </Form>
-                  </Card.Body>
-                </Card>
-                </Col>
-                <Col md={4} sm={12} className="d-flex flex-column">
-                  <ul className="no-bullets">
-                    <li><h3>Contact Info</h3></li>
-                    <li><span><i class="far fa-envelope"></i></span> vlane0593@gmail.com</li>
-                    <li><span><i class="fab fa-github"></i></span> vanessalane</li>
-                    <li><span><i class="fab fa-linkedin"></i></span> vanessa-lane</li>
-                  </ul>
-                </Col>
-              </Row>
-        </Container>
-      </div>
+      <Button className="btn-yellow" type="submit">Submit</Button>
+    </Form>
   )
 }
 

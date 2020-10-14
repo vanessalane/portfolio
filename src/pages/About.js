@@ -6,22 +6,28 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function About() {
   return (
     <>
-      <Jumbotron className="bg-blue-grey-400 mb-0 shadow">
-        <Container className="d-md-flex justify-content-space-between align-items-center">
-          <div className="text-center p-4">
-            <Image
-              src={require("../assets/image/vanessalane_headshot_bw.jpg")}
-              roundedCircle
-              width="250vw"/>
-          </div>
-          <div className="justify-content-center p-md-5">
-            <h1 className="color-white display-3"><strong>Hello, World!</strong></h1>
-            <h2>I'm Vanessa Lane, a full-stack developer based in San Francisco, CA.</h2>
-          </div>
+      <Jumbotron fluid className="mb-0 shadow">
+        <Container>
+          <Row>
+            <Col sm={12} md={6}lg={4} className="justify-content-center">
+              <Image
+                src={require("../assets/image/vanessalane_headshot_bw.jpg")}
+                roundedCircle
+                width="300vw"/>
+            </Col>
+            <Col className="pl-md-5">
+                <h1 className="display-4 text-center text-lg-left color-white p-0-lg pt-4">hello, world!</h1>
+                <p className="color-dark-grey text-center text-md-left h3">
+                  I'm Vanessa Lane, a full-stack developer based in San Francisco.
+                </p>
+            </Col>
+          </Row>
         </Container>
       </Jumbotron>
       
@@ -44,9 +50,9 @@ function About() {
         </Container>
       </div>
 
-      <Container className="pt-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <Container className="p-5 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
         <LinkContainer to="/projects">
-          <Button className="m-3">Peep my Projects</Button>
+            <Button className="m-3">Peep my Projects</Button>
         </LinkContainer>
         <LinkContainer to="/contact">
           <Button className="m-3">Get in Touch</Button>

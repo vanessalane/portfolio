@@ -1,72 +1,108 @@
-.App {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  color: #616161;
-}
-
 main {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
   background-color: #F7E9CA;
+  font-family: 'Lato', sans-serif;
+  color: #616161;
+  min-height: 90vh;
 }
-
-.jumbotron {
-  border-radius: 0px;
-}
-
 .row > div[class*='col-'] {
   display: flex;
   flex: 1 0 auto;
 }
+.copyright {
+  margin: auto;
+}
 
-footer {
+/* Start Terminal Styles */
+.terminal {
+  background-color: #212121;
+  height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  .terminal h1 {
+    font-size: 8vw;
+  }
+}
+.terminal-text {
+  opacity: 80%;
   padding-top: 16px;
 }
-
-ul.no-bullets {
-  list-style-type: none;
+.color-blue {
+  color: #2196f3;
 }
+.color-green {
+  color: #00c853;
+}
+/* End Terminal Styles */
 
+/* Start Text Styles */
 a {
   color: #5486c0;
 }
+a:hover {
+  color: #dc5a26;
+  text-decoration: none;
+}
+.color-white {
+  color: #FFFFFF;
+}
+.color-dark-grey {
+  color: #212121;
+}
+h1, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+h3 {
+  color: #dc5a26;
+  padding-bottom: 16px;
+}
+ul.no-bullets {
+  list-style-type: none;
+}
+/* End Text Styles */
 
+/* Start Jumbotron Styles */
+.jumbotron {
+  background-color: #78909c;
+  color: #ffffff;
+}
+.jumbotron .col {
+  margin: auto;
+}
+.jumbotron h1, h2 {
+  text-align: center;
+}
+/* End Jumbotron Styles */
+
+/* Nav Styles */
+.navbar-brand {
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 0px;
+}
+/* End Nav Styles */
+
+/* Button Styles */
+.btn {
+  background-color: #E0A62D;
+  border: 3px solid #E0A62D;
+  width: 100%;
+}
+.btn:hover, .btn:active {
+  background-color: #dc5a26;
+  border: 3px solid #dc5a26;
+}
+/* End Button Styles */
+
+/* Card Animation Styles */
 .card {
   border-radius: 4px;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.2),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
-
 .projects .card:hover{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-
-a:hover {
-  color: #dc5a26;
-  text-decoration: none;
-}
-
-.btn {
-  background-color: #E0A62D;
-  border: 3px solid #E0A62D;
-}
-
-.btn:hover, .btn:active {
-  background-color: #B77D04;
-  border: 3px solid #B77D04;
-}
-
-h1, h3, h4 {
-  font-family: 'Roboto Mono', monospace;
-}
-
-h2 {
-  color: #212121;
-}
-
-h3 {
-  color: #dc5a26;
-  padding-bottom: 16px;
-}
+/* End Card Animation Styles */

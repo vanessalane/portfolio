@@ -10,13 +10,13 @@ import ContactIcons from '../ContactIcons'
 
 function Footer() {
   return (
-    <footer className="pt-5">
+    <footer className="bg-light p-3 shadow footer">
       <Container>
-        <Row className="text-left">
-          <Col>
-            <p>© 2020 Vanessa Lane</p>
+        <Row>
+          <Col sm={12} md={6} className="m-md-0">
+            <p className="m-md-0 copyright">© 2020 Vanessa Lane</p>
           </Col>
-          <Col className="d-flex justify-content-end">
+          <Col sm={12} md={6} className="d-flex justify-content-md-end justify-content-center">
             <ContactIcons></ContactIcons>
           </Col>
         </Row>

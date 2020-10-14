@@ -12,7 +12,9 @@ function Header() {
   return(
     <>
       <Navbar expand="lg" className="bg-light shadow">
+        <LinkContainer to="/about">
         <Navbar.Brand>Vanessa Lane</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

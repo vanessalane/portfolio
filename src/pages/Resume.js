@@ -10,10 +10,10 @@ import CardDeck from 'react-bootstrap/CardDeck';
 function Resume() {
   return (
     <>
-      <Jumbotron className="bg-blue-grey-400 p-5 mb-0 shadow">
+      <Jumbotron fluid className="p-5 mb-0 shadow">
         <Container className="text-center">
           <div className="p-md-5">
-            <h1 className="color-white display-3"><strong>Resume</strong></h1>
+            <h1>Resume</h1>
           </div>
         </Container>
       </Jumbotron>
@@ -56,8 +56,8 @@ function Resume() {
         </Container>
       </div>
 
-      <Container className="pt-3 text-center">
-      <Button
+      <Container className="p-5 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <Button
           href="https://drive.google.com/file/d/1qmccLqEyEsjv0kp6O7N79qJWtfALNGZi/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap'
 
 // import react-bootstrap components
 import Container from 'react-bootstrap/Container';
@@ -71,16 +72,16 @@ function Projects() {
   ]
   return (
     <>
-      <Jumbotron className="bg-blue-grey-400 color-white p-5 mb-0 shadow">
+      <Jumbotron fluid className="p-5 mb-0 shadow">
         <Container className="text-center">
           <div className="p-md-5">
-            <h1 className="display-3"><strong>Recent Projects</strong></h1>
+            <h1>Recent Projects</h1>
           </div>
         </Container>
       </Jumbotron>
 
-      <div className="bg-light p-sm-5 pb-4 mt-5 shadow projects">
-        <Container>
+      <div className="shadow bg-light mt-5 projects">
+        <Container className="p-3 pb-5 p-md-5">
           <Row>
             {projects.map((project) => {
               return(
@@ -93,14 +94,13 @@ function Projects() {
         </Container>
       </div>
       
-      <Container className="text-center pt-3">
-        <Button
-          href="https://github.com/vanessalane"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="m-3">
-            View all of my projects on GitHub
-        </Button>
+      <Container className="p-5 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <LinkContainer to="/resume">
+          <Button className="m-3">Check my Resume</Button>
+        </LinkContainer>
+        <LinkContainer to="/contact">
+          <Button className="m-3">Get in Touch</Button>
+        </LinkContainer>
       </Container>
     </>
   )

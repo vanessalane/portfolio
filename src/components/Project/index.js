@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 function Project({project}) {
   return (
-    <Card className="m-lg-4 m-2 bg-white d-flex justify-content-center">
+    <Card className="m-lg-4 m-2 d-flex justify-content-center">
         <Card.Body>
           <Card.Title className="d-flex justify-content-between align-items-center">
             <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
@@ -15,7 +15,7 @@ function Project({project}) {
               <span><i className="fab fa-github"></i></span>
             </a>
           </Card.Title>
-          <Card.Subtitle className="color-grey-700">
+          <Card.Subtitle>
             {project.description}
           </Card.Subtitle>
         <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
