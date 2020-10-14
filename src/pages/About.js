@@ -17,7 +17,8 @@ function About() {
               <Image
                 src={require("../assets/image/vanessalane_headshot_bw.jpg")}
                 roundedCircle
-                width="300vw"/>
+                width="300vw"
+                height="300vw"/>
             </Col>
             <Col className="pl-md-5">
                 <h1 className="display-4 text-center text-lg-left text-light p-0-lg pt-4">
