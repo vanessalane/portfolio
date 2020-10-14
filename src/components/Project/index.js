@@ -15,7 +15,7 @@ function Project({project}) {
               <span><i className="fab fa-github"></i></span>
             </a>
           </Card.Title>
-          <Card.Subtitle className="color-grey-800">
+          <Card.Subtitle className="color-grey-700">
             {project.description}
           </Card.Subtitle>
         <a href={project.deployed_app} target="_blank" rel="noopener noreferrer">
