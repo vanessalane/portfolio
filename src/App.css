@@ -38,7 +38,7 @@ main {
 /* End Terminal Styles */
 
 /* Start Text Styles */
-a {
+a, .form-message {
   color: #5486c0;
 }
 a:hover {

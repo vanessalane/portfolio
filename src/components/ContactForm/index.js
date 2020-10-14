@@ -70,11 +70,9 @@ function ContactForm() {
         <Form.Control required name="message" as="textarea" rows="5" placeholder="Message" onBlur={handleChange} />
       </Form.Group>
 
-      {formMessage && (
-        <p>{formMessage}</p>
-      )}
+      {formMessage && <p className="form-message">{formMessage}</p>}
 
-      <Button className="btn-yellow" type="submit">Submit</Button>
+      <Button type="submit">Submit</Button>
     </Form>
   )
 }
