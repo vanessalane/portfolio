@@ -1,9 +1,7 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap'
 
 // import react-bootstrap components
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -80,7 +78,7 @@ function Projects() {
         </Container>
       </Jumbotron>
 
-      <div className="shadow bg-light mt-5 projects">
+      <div className="shadow bg-light mt-5 mb-5 projects">
         <Container className="p-3 pb-5 p-md-5">
           <Row>
             {projects.map((project) => {
@@ -93,15 +91,6 @@ function Projects() {
           </Row>
         </Container>
       </div>
-      
-      <Container className="p-5 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
-        <LinkContainer to="/resume">
-          <Button className="m-3">Check my Resume</Button>
-        </LinkContainer>
-        <LinkContainer to="/contact">
-          <Button className="m-3">Get in Touch</Button>
-        </LinkContainer>
-      </Container>
     </>
   )
 }

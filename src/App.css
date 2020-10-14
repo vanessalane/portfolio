@@ -87,7 +87,6 @@ ul.no-bullets {
 .btn {
   background-color: #E0A62D;
   border: 3px solid #E0A62D;
-  width: 100%;
 }
 .btn:hover, .btn:active {
   background-color: #dc5a26;

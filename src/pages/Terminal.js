@@ -8,9 +8,9 @@ function Terminal(props) {
     window.setTimeout(function() {
       setShowSuccess(true);
     }, 1000);
-    // window.setTimeout(function() {
-    //   props.history.push('/about');
-    // }, 2500);
+    window.setTimeout(function() {
+      props.history.push('/about');
+    }, 2500);
   };
 
   return (

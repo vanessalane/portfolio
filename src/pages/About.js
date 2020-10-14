@@ -1,10 +1,8 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap'
 
 // import react-bootstrap components
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,7 +29,7 @@ function About() {
         </Container>
       </Jumbotron>
       
-      <div className="shadow bg-light mt-5">
+      <div className="shadow bg-light mt-5 mb-5">
         <Container className="p-5">
           <h3>About Me</h3>
           <p>
@@ -49,18 +47,6 @@ function About() {
           </p>
         </Container>
       </div>
-
-      <Container className="p-5 mb-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
-        <LinkContainer to="/projects">
-            <Button className="m-3">Peep my Projects</Button>
-        </LinkContainer>
-        <LinkContainer to="/contact">
-          <Button className="m-3">Get in Touch</Button>
-        </LinkContainer>
-        <LinkContainer to="/resume">
-          <Button className="m-3">Check my Resume</Button>
-        </LinkContainer>
-      </Container>
     </>
   )
 }

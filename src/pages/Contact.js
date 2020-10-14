@@ -22,15 +22,15 @@ function Contact() {
         </Container>
       </Jumbotron>
 
-      <div className="shadow p-md-4 pt-4 pb-4 mt-5 bg-light">
+      <div className="shadow p-md-4 pt-4 pb-4 mt-5 mb-5 bg-light">
         <Container className="flex-column d-flex p-3">
           <Row>
             <Col md={4} sm={12} className="d-flex flex-column">
               <h3>Contact Info</h3>
               <ul className="no-bullets">
-                <li><span><i class="far fa-envelope"></i></span> vlane0593@gmail.com</li>
-                <li><span><i class="fab fa-github"></i></span> vanessalane</li>
-                <li><span><i class="fab fa-linkedin"></i></span> vanessa-lane</li>
+                <li><span><i className="far fa-envelope"></i></span> vlane0593@gmail.com</li>
+                <li><span><i className="fab fa-github"></i></span> vanessalane</li>
+                <li><span><i className="fab fa-linkedin"></i></span> vanessa-lane</li>
               </ul>
             </Col>
             <Col md={8} sm={12} className="d-flex flex-column pt-5 pt-lg-0">
@@ -44,8 +44,6 @@ function Contact() {
           </Row>
         </Container>
       </div>
-
-      <div className="p-5" />
     </>
   )
 }
