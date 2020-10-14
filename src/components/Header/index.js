@@ -11,7 +11,7 @@ import ContactIcons from '../ContactIcons'
 function Header() {
   return(
     <>
-      <Navbar expand="lg" className="bg-light shadow">
+      <Navbar collapseOnSelect expand="lg" className="bg-light shadow">
         <LinkContainer to="/about">
         <Navbar.Brand>Vanessa Lane</Navbar.Brand>
         </LinkContainer>

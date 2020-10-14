@@ -35,9 +35,9 @@ function About() {
         <Container className="p-5">
           <h3>About Me</h3>
           <p>
-            I'm on the research program management team at <a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a>,
-            where I build study recruitment materials, run operations for our <a href="https://research.23andme.com/collaborate/" target="_blank" rel="noopener noreferrer">academic collaboration programs</a>,
-            and improve internal workflows.
+            I'm on the Research Program Management team at <a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a>,
+            where I coordinate web development work for research studies, run operations for our <a href="https://research.23andme.com/collaborate/" target="_blank" rel="noopener noreferrer">
+            academic collaboration programs</a>, and streamline internal operations workflows.
           </p>
           <p>
             I started programming once I learned that I could <a href="https://automatetheboringstuff.com/" rel="noopener noreferrer" target="_blank">
@@ -45,7 +45,7 @@ function About() {
             I'm looking to transition into a full-time engineering role.
           </p>
           <p>
-            In my free time, I like to travel, cook, make pottery, and spend time with friends and family.
+            When I'm not in front of a screen, you might find me cooking, making pottery, or spending time with friends and family.
           </p>
         </Container>
       </div>
