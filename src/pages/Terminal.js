@@ -37,7 +37,7 @@ function Terminal(props) {
           </Typist>
         </span>
         {showSuccess && 
-          <span className="color-green mt-3">Redirecting...</span>
+          <p className="color-green mt-3">Redirecting...</p>
         }
       </h1>
     </div>
