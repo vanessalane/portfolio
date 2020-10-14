@@ -20,7 +20,8 @@ function About() {
                 width="300vw"/>
             </Col>
             <Col className="pl-md-5">
-                <h1 className="display-4 text-center text-lg-left text-light p-0-lg pt-4">hello, world!</h1>
+                <h1 className="display-4 text-center text-lg-left text-light p-0-lg pt-4">
+                  hello, world!</h1>
                 <p className="text-dark text-center text-md-left h3">
                   I'm Vanessa Lane, a full-stack developer based in San Francisco.
                 </p>
@@ -33,9 +34,9 @@ function About() {
         <Container className="p-5">
           <h3>About Me</h3>
           <p>
-              I'm on the research program management team at <a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a>,
-              where I build study recruitment materials, run operations for our <a href="https://research.23andme.com/collaborate/" target="_blank" rel="noopener noreferrer">academic collaboration programs</a>,
-              and improve internal workflows. I also have experience in education, healthcare consulting, and academic research.
+            I'm on the research program management team at <a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a>,
+            where I build study recruitment materials, run operations for our <a href="https://research.23andme.com/collaborate/" target="_blank" rel="noopener noreferrer">academic collaboration programs</a>,
+            and improve internal workflows.
           </p>
           <p>
             I started programming once I learned that I could <a href="https://automatetheboringstuff.com/" rel="noopener noreferrer" target="_blank">
