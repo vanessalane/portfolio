@@ -3,18 +3,17 @@ import React from 'react';
 // import react-bootstrap components
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 // import custom components
 import ContactForm from '../components/ContactForm';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
 
 // define ContactForm component
 function Contact() {
   return (
     <>
-      <Jumbotron fluid className="p-5 mb-0 shadow">
+      <Jumbotron fluid className="p-5 mb-0">
         <Container className="text-center">
           <div className="p-md-5">
             <h1>Get in Touch</h1>
@@ -22,28 +21,26 @@ function Contact() {
         </Container>
       </Jumbotron>
 
-      <div className="shadow p-md-4 pt-4 pb-4 mt-5 mb-5 bg-light">
-        <Container className="flex-column d-flex p-3">
+      <Container fluid className="shadow bg-light mb-5">
+        <Container className="p-4">
           <Row>
-            <Col md={4} sm={12} className="d-flex flex-column">
-              <h3>Contact Info</h3>
-              <ul className="no-bullets">
-                <li><span><i className="far fa-envelope"></i></span> vlane0593@gmail.com</li>
-                <li><span><i className="fab fa-github"></i></span> vanessalane</li>
-                <li><span><i className="fab fa-linkedin"></i></span> vanessa-lane</li>
-              </ul>
+            <Col>
+              <Container>
+                <h4>Contact Info</h4>
+                <p><span><i className="far fa-envelope pr-3"></i></span>vlane0593@gmail.com</p>
+                <p><span><i className="fab fa-github pr-3"></i></span> vanessalane</p>
+                <p><span><i className="fab fa-linkedin pr-3"></i></span> vanessa-lane</p>
+              </Container>
             </Col>
-            <Col md={8} sm={12} className="d-flex flex-column pt-5 pt-lg-0">
-              <h3>Send me an email!</h3>
-              <Card>
-                <Card.Body>
-                  <ContactForm />
-                </Card.Body>
-              </Card>
+            <Col sm={12} md={6} lg={8} className="pt-sm-4 pt-lg-0">
+              <Container>
+                <h4>Send a Message</h4>
+                <ContactForm />
+              </Container>
             </Col>
           </Row>
         </Container>
-      </div>
+      </Container>
     </>
   )
 }

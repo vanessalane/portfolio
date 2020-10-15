@@ -2,7 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  background-color: #F7E9CA;
+  background-color: #f9efd8;
   font-family: 'Lato', sans-serif;
   min-height: 90vh;
 }
@@ -16,11 +16,6 @@ main {
 .terminal {
   height: 100vh;
 }
-@media only screen and (max-width: 600px) {
-  .terminal h1 {
-    font-size: 8vw;
-  }
-}
 
 /* Start Text Styles */
 a {
@@ -33,12 +28,17 @@ a:hover, .form-message {
 h1, h3, h4 {
   font-family: 'Roboto Mono', monospace;
 }
-h3 {
+h3, h4 {
   color: #dc5a26;
   padding-bottom: 16px;
 }
 ul.no-bullets {
   list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+  .terminal h1 {
+    font-size: 8vw;
+  }
 }
 /* End Text Styles */
 

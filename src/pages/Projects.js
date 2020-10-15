@@ -78,19 +78,17 @@ function Projects() {
         </Container>
       </Jumbotron>
 
-      <div className="shadow bg-light mt-5 mb-5 projects">
-        <Container className="p-3 pb-5 p-md-5">
-          <Row>
-            {projects.map((project) => {
-              return(
-                <Col s={12} md={6} key={project.key}>
-                  <Project project={project} />
-                </Col>
-              )
-            })}
-          </Row>
-        </Container>
-      </div>
+      <Container className="p-3 ">
+        <Row>
+          {projects.map((project) => {
+            return(
+              <Col s={12} lg={6} key={project.key}>
+                <Project project={project} />
+              </Col>
+            )
+          })}
+        </Row>
+      </Container>
     </>
   )
 }

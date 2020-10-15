@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 function About() {
   return (
     <>
-      <Jumbotron fluid className="mb-0 shadow">
+      <Jumbotron fluid className="mb-0">
         <Container>
           <Row>
             <Col sm={12} md={6}lg={4} className="justify-content-center">
@@ -30,8 +30,8 @@ function About() {
           </Row>
         </Container>
       </Jumbotron>
-      
-      <div className="shadow bg-light mt-5 mb-5">
+
+      <Container fluid className="shadow mb-5 bg-light">
         <Container className="p-5">
           <h3>About Me</h3>
           <p>
@@ -48,7 +48,7 @@ function About() {
             When I'm not in front of a screen, you might find me cooking, making pottery, or spending time with friends and family.
           </p>
         </Container>
-      </div>
+      </Container>
     </>
   )
 }
