@@ -1,7 +1,7 @@
 # React Portfolio
 This repo includes code for my portfolio built with React.
 
-Deployed app: http://www.vlane.net
+Deployed app: https://vanessalane.herokuapp.com
 
 ## Dev Info
 
