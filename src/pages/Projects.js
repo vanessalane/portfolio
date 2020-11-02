@@ -10,15 +10,23 @@ import Col from 'react-bootstrap/Col';
 import Project from '../components/Project';
 
 // import images for apps
+import fantinderImage from '../assets/image/fantinder.png';
 import drinkAppImage from '../assets/image/drink_app.png';
 import covidDatahubImage from '../assets/image/covid_datahub.png';
 import budgetTrackerImage from '../assets/image/budget_tracker.png';
-import workdaySchedulerImage from '../assets/image/workday_scheduler.png';
 import weatherDashboardImage from '../assets/image/weather_dashboard.png';
 import jsQuizImage from '../assets/image/js_quiz.png';
 
 function Projects() {
   const projects = [
+    {
+      "title": "FanTinder",
+      "description": "A MERN app for discovering and saving movies",
+      "key": "fantinder",
+      "imageSrc": fantinderImage,
+      "repository": "https://github.com/anitapeppercorn/FANTINDER",
+      "deployed_app": "https://fantinder.herokuapp.com/"
+    },
     {
       "title": "Drink App",
       "description": "A full-stack app for sharing cocktail recipes",
@@ -58,14 +66,6 @@ function Projects() {
       "imageSrc": jsQuizImage,
       "repository": "https://github.com/vanessalane/code-quiz",
       "deployed_app": "https://vanessalane.github.io/code-quiz/"
-    },
-    {
-      "title": "Workday Scheduler",
-      "description": "A frontend vanilla JS app for scheduling your workday",
-      "key": "workday-scheduler",
-      "imageSrc": workdaySchedulerImage,
-      "repository": "https://github.com/vanessalane/workday-scheduler",
-      "deployed_app": "https://vanessalane.github.io/workday-scheduler/"
     }
   ]
   return (
