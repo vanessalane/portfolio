@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 import Project from '../components/Project';
 
 // import images for apps
-import fantinderImage from '../assets/image/fantinder.png';
+import movieExplorerImage from '../assets/image/movie_explorer.png';
 import drinkAppImage from '../assets/image/drink_app.png';
 import covidDatahubImage from '../assets/image/covid_datahub.png';
 import budgetTrackerImage from '../assets/image/budget_tracker.png';
@@ -20,12 +20,12 @@ import jsQuizImage from '../assets/image/js_quiz.png';
 function Projects() {
   const projects = [
     {
-      "title": "FanTinder",
+      "title": "Movie Explorer",
       "description": "A MERN app for discovering and saving movies",
-      "key": "fantinder",
-      "imageSrc": fantinderImage,
-      "repository": "https://github.com/anitapeppercorn/FANTINDER",
-      "deployed_app": "https://fantinder.herokuapp.com/"
+      "key": "movie-explorer",
+      "imageSrc": movieExplorerImage,
+      "repository": "https://github.com/vanessalane/movie-explorer",
+      "deployed_app": "https://vanessalane-movieexplorer.herokuapp.com/"
     },
     {
       "title": "Drink App",
